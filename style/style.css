@@ -1,0 +1,291 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  color: inherit;
+}
+
+body {
+  font-size: 16px;
+  text-align: center;
+  background-color: #f5f3f3;
+}
+
+.flex-col-center, .container .header_nav, .container .header_nav__navlinks.show, .container .main-section_container .card1, .container .main-section_container .card2_status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-rwo-between, .container .header_nav__logo, .container .main-section_container .card1 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.container .header {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+}
+
+.container .header_nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+  height: 10vh;
+}
+
+.container .header_nav__logo {
+  width: 100%;
+}
+
+.container .header_nav__logo___btn {
+  position: relative;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.container .header_nav__logo___btn .bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 1rem;
+  background-color: #fff;
+  -webkit-transition: .25s ease-in-out 1s;
+  transition: .25s ease-in-out 1s;
+}
+
+.container .header_nav__logo___btn .bar2 {
+  margin: 5px 0;
+  -webkit-transition: .25s width ease-in-out 1s;
+  transition: .25s width ease-in-out 1s;
+}
+
+.container .header_nav__logo___btn .close.bar1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.container .header_nav__logo___btn .close.bar2 {
+  display: none;
+}
+
+.container .header_nav__logo___btn .close.bar3 {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.container .header_nav__navlinks {
+  display: none;
+}
+
+.container .header_nav__navlinks.show {
+  background-color: #fff;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 2rem;
+  width: 100%;
+  border-radius: .25rem;
+  z-index: 10;
+  position: relative;
+}
+
+.container .header_nav__navlinks :nth-child(2) {
+  border-top: rgba(149, 147, 147, 0.178) solid 0.5px;
+  border-bottom: rgba(149, 147, 147, 0.178) solid 0.5px;
+}
+
+.container .header_nav__navlinks a {
+  padding: 1.5rem;
+  width: 100%;
+  text-align: start;
+  font-family: "Commissioner", sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
+.container .header_hero {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.container .header_hero img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .header_hero ::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.829)), to(transparent));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.829), transparent);
+  width: 100%;
+  height: 100%;
+}
+
+.container .header_hero.F-bg ::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.164);
+  width: 100%;
+  height: 200vh;
+  position: fixed;
+}
+
+.container .main-section_container {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1.2rem;
+  place-items: center;
+  margin-top: -3rem;
+}
+
+.container .main-section_container .card {
+  border-radius: .5rem;
+  border: rgba(216, 216, 216, 0.568) solid 0.5px;
+  background-color: #fff;
+  width: 85%;
+  padding: .75rem;
+  font-family: "Commissioner", sans-serif;
+}
+
+.container .main-section_container .card p {
+  color: #7a7a7a;
+}
+
+.container .main-section_container .card button {
+  color: white;
+  background-color: #3cb4ac;
+  border-radius: 3rem;
+  font-weight: 700;
+}
+
+.container .main-section_container .card1 {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .main-section_container .card1 img:nth-child(1) {
+  margin-top: -3rem;
+}
+
+.container .main-section_container .card1 h1 {
+  margin-top: .5rem;
+  padding: .75rem;
+}
+
+.container .main-section_container .card1 p {
+  padding: .5rem;
+  line-height: 1.75;
+}
+
+.container .main-section_container .card1 div {
+  width: 100%;
+  padding: .75rem 1rem;
+}
+
+.container .main-section_container .card1 div button {
+  padding: 1.2rem 1.5rem;
+  width: 75%;
+}
+
+.container .main-section_container .card2_status {
+  padding: 1rem 0;
+}
+
+.container .main-section_container .card2_status h2 {
+  font-size: 35px;
+  margin-bottom: .5rem;
+}
+
+.container .main-section_container .card2_status p {
+  font-size: 15px;
+}
+
+.container .main-section_container .card2_status .line {
+  width: 25%;
+  height: 1px;
+  background-color: rgba(161, 161, 161, 0.459);
+  margin-top: 1.2rem;
+}
+
+.container .main-section_container .card2_status.status4 {
+  padding: 0;
+  width: 90%;
+  margin: 1rem auto;
+  height: 13px;
+  background-color: #f5f3f3;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .main-section_container .card2_status.status4::after {
+  content: "";
+  position: absolute;
+  width: 79%;
+  height: 13px;
+  background-color: #3cb4ac;
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
