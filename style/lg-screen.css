@@ -1,0 +1,144 @@
+.container .header {
+  height: 45vh;
+}
+
+.container .header_nav {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(12%, rgba(0, 0, 0, 0.568)), to(transparent));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.568) 12%, transparent 100%);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .header_nav__logo {
+  width: 30%;
+}
+
+.container .header_nav__logo___btn {
+  display: none;
+}
+
+.container .header_nav__navlinks {
+  display: block;
+}
+
+.container .header_nav__navlinks > a {
+  color: white;
+}
+
+.container .header_hero {
+  height: 55vh;
+}
+
+.container .main-section {
+  width: 58%;
+}
+
+.container .main-section_container {
+  margin: 0;
+}
+
+.container .main-section_container .card div button {
+  width: 25%;
+}
+
+.container .main-section_container .card1 {
+  padding: 2rem;
+}
+
+.container .main-section_container .card1 .m-logo {
+  margin-top: -4rem;
+}
+
+.container .main-section_container .card1_bookmark {
+  background-color: #f5f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 5rem;
+  height: 3.4rem;
+}
+
+.container .main-section_container .card1_bookmark > img {
+  margin: 0;
+  padding: 0;
+}
+
+.container .main-section_container .card1_bookmark > h2 {
+  display: block;
+  padding-right: 1rem;
+  padding-left: .5rem;
+  font-size: 14px;
+}
+
+.container .main-section_container .card2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: row;
+}
+
+.container .main-section_container .card2 .line {
+  display: none;
+}
+
+.container .main-section_container .card2 .status1,
+.container .main-section_container .card2 .status2 {
+  border-right: 1px solid rgba(128, 128, 128, 0.158);
+}
+
+.container .main-section_container .card2 .status4 {
+  grid-column: span 3;
+}
+
+.container .main-section_container .card3 .theme {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  place-items: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.container .main-section_container .card3 .theme > h2 {
+  place-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 18px;
+}
+
+.container .main-section_container .card3 .theme .info {
+  grid-column: span 2;
+  font-size: 16px;
+  padding: .5rem;
+}
+
+.container .main-section_container .card3 .theme > button {
+  margin: 0;
+}
+
+.container .support-menu {
+  width: 60%;
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
+  top: 4%;
+  margin-top: 5rem;
+}
+/*# sourceMappingURL=lg-screen.css.map */

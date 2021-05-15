@@ -42,7 +42,7 @@ body {
           justify-content: center;
 }
 
-.flex-rwo-between, .container .header_nav__logo, .container .main-section_container .card1 div, .container .support-menu_header__head, .container .support-menu .support-menu_card__selection {
+.flex-rwo-between, .container .header_nav__logo, .container .main-section_container .card1_btn, .container .support-menu_header__head, .container .support-menu .support-menu_card__selection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,7 +67,6 @@ body {
   display: grid;
   grid-auto-flow: row;
   place-items: center;
-  place-content: center;
 }
 
 .container .header {
@@ -161,9 +160,9 @@ body {
   top: 0;
   z-index: 3;
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  object-fit: cover;
   overflow: hidden;
 }
 
@@ -242,7 +241,7 @@ body {
           justify-content: space-between;
 }
 
-.container .main-section_container .card1 img:nth-child(1) {
+.container .main-section_container .card1 .m-logo {
   margin-top: -3rem;
 }
 
@@ -256,14 +255,18 @@ body {
   line-height: 1.75;
 }
 
-.container .main-section_container .card1 div {
+.container .main-section_container .card1_btn {
   width: 100%;
   padding: .75rem 1rem;
 }
 
-.container .main-section_container .card1 div button {
+.container .main-section_container .card1_btn > button {
   padding: 1.2rem 1.5rem;
   width: 75%;
+}
+
+.container .main-section_container .card1_btn h2 {
+  display: none;
 }
 
 .container .main-section_container .card2_status {
